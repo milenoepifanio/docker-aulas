@@ -1,0 +1,27 @@
+Docker ps - todos os conteiners executados no momento
+Docker ls
+Docker run <image> - comando para executar uma docker
+docker ps -a - todos os comandos executados, parados ou não
+docker flag -it -
+container x vm (virtual machine) - 
+flag -p 80:80 -por exemplo, é a liberação de conexão da porta ao mundo externo
+--name: definir o nome de um conteiner
+docker logs <id> para ver logs
+docker -rm <id> - removendo conteiners
+
+Conteiner é uma aplicação isolada que serve para um determinado fim
+
+
+Imagens são arquivos originadas de arquivos que programamos para o docker
+    Eles contém informações como imagens base, diretório base, comandos a serem executados, porta da aplicação e executados
+
+Nomeando a imagem no build (só precisa usar -t, exemplo docker biuld -t meunode_diferente .)
+Removendo imagens: docker rmi
+Remover imagens, containers e netword que não estamos utilizando: docker system prune
+Copiando arquivos do conteiner: docker cp
+Verificar informações de processamento docker top <container>
+Verificar processamento: docker stats
+Enviar imagem para o docker hub docker push <imagem>
+
+
+Volumes: persistem dados que ficam dentro do conteiner, fica como sendo um backup de um volume para ser usado

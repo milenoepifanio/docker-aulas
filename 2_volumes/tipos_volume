@@ -1,0 +1,26 @@
+anonymous docker run -v /data 
+volume nomeado docker run -v nomedovolume:/data
+bind mount é um volume, mas fica no diretório da máquina host
+    docker run/dir/data:/data
+
+criar volume: docker volume create <nome>
+checar volume docker volume inspect nome
+volume só de leitua: -v volume:/data:ro
+
+Redes
+Externa: Conexão com uma API
+Com host: Comunicação da máquina com o dockerEntre containers: comunicação entre dois ou mais
+
+Tipos de redes:
+- Bridge (default do docker, utilizado quando containers precisam se conectar)
+- host: permite a conexão entre um container a máquina que está hosteando o Docker
+- macvlan: permite a conexão a um container por um MAC address
+- None: Remove todas as conexões dew rede de um container
+- pluggins: permite extensões de terc eiros para criar outras redes
+
+
+Listando redes: docker network ls
+Criando redes: docker create <name>. Essa rede será do tipo bridge, que é o mais utilizados
+- Remover redes: docker network rm <name>.
+- Remover redes em massa: docker network prune
+- 
