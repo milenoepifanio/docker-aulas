@@ -7,11 +7,11 @@ spec:
   selector:
     matchLabels:
       app: flask-app
-    template:
-      metadata:
-        labels:
-          app: flask-app
-      spec:
-        containers:
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
         - name: flask
-          image: mileno/flask-kub-projeto:2
+          image: mileno/flask-kub-projeto
